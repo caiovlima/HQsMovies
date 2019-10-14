@@ -1,0 +1,43 @@
+<mat-card class="wall">
+  <mat-card-title class="wallheader">
+          <input matInput type="text" placeholder="Search a film" class="example-form-field" [(ngModel)]="title" >
+          <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="getFilm(title)">
+            <mat-icon>search</mat-icon>
+          </button>
+  </mat-card-title>
+
+  <mat-card class="example-card container">
+    <mat-card-header class="centralized">
+      <mat-card-title>{{movie.Title}}</mat-card-title>
+      <mat-card-subtitle>{{movie.Director}} - {{movie.Released}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img
+      mat-card-image
+      src={{movie.Poster}}
+      alt="Poster"
+    />
+    <mat-card-content>
+      <mat-card-subtitle>IMDB: {{movie.imdbRating}}</mat-card-subtitle>
+      <p>
+        {{movie.Plot}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions align='end'>
+      <div class="example-button-row">
+        <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon-button with a share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </div>
+    </mat-card-actions>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-card>
+</mat-card>
