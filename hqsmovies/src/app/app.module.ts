@@ -11,12 +11,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +30,10 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatFormFieldModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [LoginComponent]
 })
 export class AppModule { }
