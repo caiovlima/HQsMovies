@@ -5,6 +5,8 @@
 .example-header-image {
   background-size: cover;
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  height: 150px;
+  width: 150px;
 
 }
 
@@ -24,12 +26,12 @@
 }
 
 .wallheader {
-  background-color: #ffffff;
+  background-color: #EB5A46;
   height: 50px;
 }
 
 .wall {
-  background-color: #ffffff;
+  background-color: #EB5A46;
   padding: 0%;
   text-align: center;
 }
